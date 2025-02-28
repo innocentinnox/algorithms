@@ -5,16 +5,16 @@ int binarySearch(int arr[], int n, int target){
     int right = n-1;
     while(left<=right){
         int mid = (left + right) / 2;
-        printf("left - right: %d - %d  mid: %d \n", left, right, mid);
+        printf("Searching between: [%d, %d], mid = %d\n", left, right, mid);
         if(arr[mid] == target){
             return mid;
         } else if(arr[mid] < target){
-            left = mid + 1;
+            left = mid + 1; ;  // Search right half
         } else {
-            right = mid - 1;
+            right = mid - 1; // Search left half
         }
     }
-    return -1;
+    return -1;   // Element not found
 }
 
 int main(){
