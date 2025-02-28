@@ -1,0 +1,8 @@
+# env files
+.env*.local
+.env
+.env.production
+
+# Executables
+/*.exe
+/*.txt
